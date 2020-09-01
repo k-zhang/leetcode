@@ -1,4 +1,4 @@
-package com.algomind.leetcode.TwoSum;
+package com.algomind.leetcode.twosum;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

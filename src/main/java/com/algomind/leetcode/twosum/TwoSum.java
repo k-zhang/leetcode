@@ -1,4 +1,4 @@
-package com.algomind.leetcode.TwoSum;
+package com.algomind.leetcode.twosum;
 
 import java.util.HashMap;
 import java.util.Map;

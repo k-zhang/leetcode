@@ -1,6 +1,6 @@
-package com.algomind.leetcode;
+package com.algomind.leetcode.reverseinteger;
 
-import com.algomind.leetcode.ReverseInteger.ReverseInteger;
+import com.algomind.leetcode.reverseinteger.ReverseInteger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

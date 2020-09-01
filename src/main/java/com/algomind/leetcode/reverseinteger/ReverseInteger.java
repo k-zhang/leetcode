@@ -1,4 +1,4 @@
-package com.algomind.leetcode.ReverseInteger;
+package com.algomind.leetcode.reverseinteger;
 
 public class ReverseInteger {
     public int reverse(int x) {

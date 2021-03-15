@@ -12,7 +12,7 @@ class LongestPalindromicSubstringTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void test(String expected, String s) {
+    public void testLongestPalindromicSubstring(String expected, String s) {
         Assertions.assertEquals(expected, longestPalindromicSubstring.longestPalindrome(s));
     }
 

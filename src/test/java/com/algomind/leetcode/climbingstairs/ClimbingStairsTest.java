@@ -12,7 +12,7 @@ class ClimbingStairsTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testContainerWithMostWater(int expected, int input) {
+    public void testClimbingStairs(int expected, int input) {
         Assertions.assertEquals(expected, climbingStairs.climbStairs(input));
     }
 

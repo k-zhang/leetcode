@@ -12,7 +12,7 @@ class AddTwoNumbersTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void test(ListNode result, ListNode l1, ListNode l2) {
+    public void testAddTwoNumbers(ListNode result, ListNode l1, ListNode l2) {
         Assertions.assertEquals(result, addTwoNumbers.addTwoNumbers(l1, l2));
     }
 

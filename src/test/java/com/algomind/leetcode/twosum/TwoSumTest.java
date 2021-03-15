@@ -12,7 +12,7 @@ class TwoSumTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void test(int[] expected, int[] nums, int target) {
+    public void testTwoSum(int[] expected, int[] nums, int target) {
         Assertions.assertArrayEquals(expected, twoSum.twoSum(nums, target));
     }
 

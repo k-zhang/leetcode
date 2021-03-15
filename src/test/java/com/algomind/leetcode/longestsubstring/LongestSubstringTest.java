@@ -12,7 +12,7 @@ class LongestSubstringTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void test1(int result, String s) {
+    public void testLongestSubstring(int result, String s) {
         Assertions.assertEquals(result, longestSubstring.lengthOfLongestSubstring(s));
     }
 

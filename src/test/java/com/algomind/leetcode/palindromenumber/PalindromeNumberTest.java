@@ -12,7 +12,7 @@ class PalindromeNumberTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void test(boolean expected, int x){
+    public void testPalindromeNumber(boolean expected, int x){
         Assertions.assertEquals(expected, palindromeNumber.isPalindrome(x));
     }
 

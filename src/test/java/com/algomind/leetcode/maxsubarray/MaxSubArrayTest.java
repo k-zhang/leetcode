@@ -12,7 +12,7 @@ class MaxSubArrayTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testContainerWithMostWater(int expected, int[] input) {
+    public void testMaxSubArray(int expected, int[] input) {
         Assertions.assertEquals(expected, maxSubArray.maxSubArray(input));
     }
 

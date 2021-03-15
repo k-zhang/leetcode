@@ -12,7 +12,7 @@ class IntegerToRomanTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void test1(String expected, int s) {
+    public void testIntegerToRoman(String expected, int s) {
         Assertions.assertEquals(expected, integerToRoman.intToRoman(s));
     }
 

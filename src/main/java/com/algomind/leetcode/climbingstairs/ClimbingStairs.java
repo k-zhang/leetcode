@@ -1,5 +1,6 @@
 package com.algomind.leetcode.climbingstairs;
 
+// Dynamic Programming
 public class ClimbingStairs {
     public int climbStairs(int n) {
         if(n == 1) return 1;

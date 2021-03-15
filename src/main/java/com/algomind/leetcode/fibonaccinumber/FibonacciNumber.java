@@ -1,5 +1,6 @@
 package com.algomind.leetcode.fibonaccinumber;
 
+// Dynamic Programming
 public class FibonacciNumber {
     public int fib1(int n) {
         if(n == 0) return 0;

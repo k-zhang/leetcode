@@ -14,6 +14,8 @@ class LongestPalindromicSubstringTest {
     @MethodSource("provideData")
     public void testLongestPalindromicSubstring(String expected, String s) {
         Assertions.assertEquals(expected, longestPalindromicSubstring.longestPalindrome(s));
+
+        System.out.println(null + "a");
     }
 
     private static Stream<Arguments> provideData() {
@@ -21,7 +23,9 @@ class LongestPalindromicSubstringTest {
                 Arguments.of("", null),
                 Arguments.of("", ""),
                 Arguments.of("aba", "babad"),
-                Arguments.of("bb", "cbbd")
+                Arguments.of("bb", "cbbd"),
+                Arguments.of("a", "ac"),
+                Arguments.of("e", "eabcd")
         );
     }
 }

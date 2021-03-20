@@ -1,5 +1,6 @@
 package com.algomind.leetcode.matrixblocksum;
 
+// Dynamic Programming
 public class MatrixBlockSum {
     public int[][] matrixBlockSum(int[][] mat, int K) {
         int[][] mc = calculateSumMatrix(mat);

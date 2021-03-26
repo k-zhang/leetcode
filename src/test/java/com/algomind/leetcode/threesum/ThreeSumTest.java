@@ -49,6 +49,25 @@ class ThreeSumTest {
         Assertions.assertEquals(expected.size(), matched);
     }
 
+    @ParameterizedTest
+    @MethodSource("provideData")
+    public void testThreeSum2(List<List<Integer>> expected, int[] nums) {
+        List<List<Integer>> result = threeSum.threeSum2(nums);
+        Assertions.assertEquals(expected.size(), result.size());
+
+        int matched = 0;
+        for (List<Integer> threeNumbers : expected) {
+            for (int j = 0; j < result.size(); j++) {
+                List<Integer> resultThreeNumbers = expected.get(j);
+                if (threeNumbers.containsAll(resultThreeNumbers) && resultThreeNumbers.containsAll(threeNumbers)) {
+                    matched++;
+                }
+            }
+        }
+
+        Assertions.assertEquals(expected.size(), matched);
+    }
+
     private static Stream<Arguments> provideData() {
         return Stream.of(
             Arguments.of(List.of(List.of(-1,-1,2), List.of(-1,0,1)), new int[]{-1,0,1,2,-1,-4}),

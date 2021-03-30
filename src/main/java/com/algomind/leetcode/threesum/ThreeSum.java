@@ -29,6 +29,8 @@ public class ThreeSum {
         }
     }
 
+    ////
+
     public List<List<Integer>> threeSum1(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();
@@ -54,6 +56,8 @@ public class ThreeSum {
             }
         }
     }
+
+    ///
 
     public List<List<Integer>> threeSum2(int[] nums) {
         if(nums.length < 3) return List.of();

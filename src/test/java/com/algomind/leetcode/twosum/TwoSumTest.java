@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class TwoSumTest {
-    TwoSum twoSum = new TwoSum();
+    private final TwoSum twoSum = new TwoSum();
 
     @ParameterizedTest
     @MethodSource("provideData")

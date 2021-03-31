@@ -15,7 +15,7 @@ class NextPermutationTest {
     @MethodSource("provideData")
     public void testNextPermutation(int[] expected, int[] nums) {
         System.out.println("Input   : " + Arrays.toString(nums));
-        nextPermutation.nextPermutation1(nums);
+        nextPermutation.nextPermutation2(nums);
         System.out.println("Result  : " + Arrays.toString(nums));
         System.out.println("Expected: " + Arrays.toString(expected));
         Assertions.assertArrayEquals(expected, nums);

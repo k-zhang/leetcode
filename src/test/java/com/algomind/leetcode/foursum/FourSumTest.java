@@ -13,7 +13,7 @@ class FourSumTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testThreeSum(List<List<Integer>> expected, int[] nums, int target) {
+    public void testFourSum(List<List<Integer>> expected, int[] nums, int target) {
         List<List<Integer>> result = fourSum.fourSum(nums, target);
         Assertions.assertEquals(expected.size(), result.size());
 

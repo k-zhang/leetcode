@@ -83,7 +83,7 @@ public class NextPermutation {
     }
 
     /// Answer 3
-    
+
     public void nextPermutation2(int[] nums) {
         if(nums.length == 1) return;
 

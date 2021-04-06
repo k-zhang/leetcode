@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+// Backtrack (see note)
 public class CombinationSum {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         var result = new ArrayList<List<Integer>>();

@@ -23,12 +23,16 @@ LeetCode problem solutions in Java for questions:
 35 - Search Insert Position<br>
 39 - Combination Sum<br>
 40 - Combination Sum II<br>
+41 - First Missing Positive<br>
 42 - Trapping Rain Water<br>
 53 - Maximum Subarray<br>
 66 - Plus One<br>
 70 - Climbing Stairs<br>
 72 - Edit Distance<br>
-121 - Best Time to Buy Sell Stock<br>
+94 - Binary Tree Inorder Traversal<br>
+96 - Unique Binary Search Trees<br>
+121 - Best Time to Buy and Sell Stock<br>
+122 - Best Time to Buy and Sell Stock II<br>
 303 - Range Sum Query<br>
 338 - Counting Bits<br>
 392 - Is Subsequence<br>
@@ -39,4 +43,5 @@ LeetCode problem solutions in Java for questions:
 1043 - Partition Array for Maximum Sum<br>
 1277 - Count Square Submatrices with All Ones<br>
 1314 - Matrix Block Sum<br>
-1641 - Count Sorted Vowel Strings<br>
+1386 - Cinema Seat Allocation<br>
+1641 - Count Sorted Vowel Strings

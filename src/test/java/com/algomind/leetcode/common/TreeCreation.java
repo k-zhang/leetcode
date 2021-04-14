@@ -1,4 +1,4 @@
-package com.algomind.leetcode.binarytreeinordertraversal;
+package com.algomind.leetcode.common;
 
 import java.util.*;
 import java.util.stream.Collectors;

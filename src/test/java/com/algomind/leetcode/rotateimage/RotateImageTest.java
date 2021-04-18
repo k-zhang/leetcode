@@ -12,7 +12,7 @@ class RotateImageTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testTrappingRainWater(int[][] expected, int[][] matrix) {
+    public void test(int[][] expected, int[][] matrix) {
         rotateImage.rotate(matrix);
 
         for(int i = 0 ; i < matrix.length; i ++) {

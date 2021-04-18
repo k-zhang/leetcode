@@ -25,11 +25,15 @@ LeetCode problem solutions in Java for questions:
 40 - Combination Sum II<br>
 41 - First Missing Positive<br>
 42 - Trapping Rain Water<br>
+45 - Jump Game II<br>
+48 - Rotate Image<br>
 53 - Maximum Subarray<br>
+54 - Spiral Matrix<br>
 66 - Plus One<br>
 70 - Climbing Stairs<br>
 72 - Edit Distance<br>
 94 - Binary Tree Inorder Traversal<br>
+95 - Unique Binary Search Trees II<br>
 96 - Unique Binary Search Trees<br>
 121 - Best Time to Buy and Sell Stock<br>
 122 - Best Time to Buy and Sell Stock II<br>

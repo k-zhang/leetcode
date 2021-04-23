@@ -29,9 +29,16 @@ LeetCode problem solutions in Java for questions:
 48 - Rotate Image<br>
 53 - Maximum Subarray<br>
 54 - Spiral Matrix<br>
+55 - Jump Game<br>
+56 - Merge Intervals<br>
+57 - Insert Interval<br>
+59 - Spiral Matrix II<br>
+62 - Unique Paths<br>
+63 - Unique Paths II<br>
 66 - Plus One<br>
 70 - Climbing Stairs<br>
 72 - Edit Distance<br>
+88 - Merge Sorted Array<br>
 94 - Binary Tree Inorder Traversal<br>
 95 - Unique Binary Search Trees II<br>
 96 - Unique Binary Search Trees<br>
@@ -48,4 +55,4 @@ LeetCode problem solutions in Java for questions:
 1277 - Count Square Submatrices with All Ones<br>
 1314 - Matrix Block Sum<br>
 1386 - Cinema Seat Allocation<br>
-1641 - Count Sorted Vowel Strings
+1641 - Count Sorted Vowel Strings<br>

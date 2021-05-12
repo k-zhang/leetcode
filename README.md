@@ -35,19 +35,28 @@ LeetCode problem solutions in Java for questions:
 59 - Spiral Matrix II<br>
 62 - Unique Paths<br>
 63 - Unique Paths II<br>
+64 - Minimum Path Sum<br>
 66 - Plus One<br>
 70 - Climbing Stairs<br>
 72 - Edit Distance<br>
+73 - Set Matrix Zeroes<br>
+74 - Search a 2D Matrix<br>
+75 - Sort Colors<br>
+78 - Subsets<br>
 88 - Merge Sorted Array<br>
 94 - Binary Tree Inorder Traversal<br>
 95 - Unique Binary Search Trees II<br>
 96 - Unique Binary Search Trees<br>
 121 - Best Time to Buy and Sell Stock<br>
 122 - Best Time to Buy and Sell Stock II<br>
+189 - Rotate Array<br>
 303 - Range Sum Query<br>
+322 - Coin Change<br>
+323 - Number of Connected Components in an Undirected Graph<br>
 338 - Counting Bits<br>
 392 - Is Subsequence<br>
 509 - Fibonacci Number<br>
+518 - Coin Change 2<br>
 746 - Min Cost Climbing Stairs<br>
 750 - Number Of Corner Rectangles<br>
 877 - Stone Game<br>

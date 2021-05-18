@@ -12,7 +12,7 @@ class RemoveDuplicatesFromSortedArrayTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testMaxSubArray(int expected, int[] input) {
+    public void test(int expected, int[] input) {
         Assertions.assertEquals(expected, removeDuplicatesFromSortedArray.removeDuplicates(input));
     }
 

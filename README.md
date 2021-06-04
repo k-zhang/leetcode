@@ -43,13 +43,18 @@ LeetCode problem solutions in Java for questions:
 74 - Search a 2D Matrix<br>
 75 - Sort Colors<br>
 78 - Subsets<br>
+79 - Word Search<br>
+80 - Remove Duplicates from Sorted Array II<br>
+81 - Search in Rotated Sorted Array II<br>
 88 - Merge Sorted Array<br>
 94 - Binary Tree Inorder Traversal<br>
 95 - Unique Binary Search Trees II<br>
 96 - Unique Binary Search Trees<br>
+97 - Interleaving String<br>
 121 - Best Time to Buy and Sell Stock<br>
 122 - Best Time to Buy and Sell Stock II<br>
 189 - Rotate Array<br>
+256 - Paint House<br>
 303 - Range Sum Query<br>
 322 - Coin Change<br>
 323 - Number of Connected Components in an Undirected Graph<br>
@@ -57,11 +62,14 @@ LeetCode problem solutions in Java for questions:
 392 - Is Subsequence<br>
 509 - Fibonacci Number<br>
 518 - Coin Change 2<br>
+695 - Max Area of Island<br>
 746 - Min Cost Climbing Stairs<br>
 750 - Number Of Corner Rectangles<br>
+752 - Open the Lock<br>
 877 - Stone Game<br>
 1043 - Partition Array for Maximum Sum<br>
 1277 - Count Square Submatrices with All Ones<br>
 1314 - Matrix Block Sum<br>
 1386 - Cinema Seat Allocation<br>
+1465 - Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts<br>
 1641 - Count Sorted Vowel Strings<br>

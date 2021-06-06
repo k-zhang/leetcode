@@ -12,7 +12,7 @@ class MergeIntervalsTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testCinemaSeatAllocation(int[][] expected, int[][] intervals) {
+    public void test(int[][] expected, int[][] intervals) {
         Assertions.assertArrayEquals(expected, mergeIntervals.merge1(intervals));
     }
 

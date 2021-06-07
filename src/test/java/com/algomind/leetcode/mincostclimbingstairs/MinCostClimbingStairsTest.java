@@ -22,7 +22,9 @@ class MinCostClimbingStairsTest {
                 Arguments.of(6, new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}),
                 Arguments.of(1, new int[]{1,2}),
                 Arguments.of(0, new int[]{0,0,0,0}),
-                Arguments.of(0, new int[]{0,0,0,1})
+                Arguments.of(0, new int[]{0,0,0,1}),
+                Arguments.of(0, new int[]{1}),
+                Arguments.of(0, new int[]{})
         );
     }
 }

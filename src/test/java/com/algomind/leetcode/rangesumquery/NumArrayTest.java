@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 class NumArrayTest {
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testBestTimeToBuySellStock1(int expected, int left, int right) {
+    public void test(int expected, int left, int right) {
         NumArray numArray = new NumArray(new int[]{-2, 0, 3, -5, 2, -1});
         Assertions.assertEquals(expected, numArray.sumRange(left, right));
     }

@@ -7,11 +7,11 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class NumArrayTest {
+class NumArray2Test {
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(Integer[] expected, int[] nums, String[] actions, int[][] parameters) {
-        var numArray = new NumArray1(nums);
+        var numArray = new NumArray2(nums);
 
         Integer[] results = new Integer[actions.length];
         for(int i = 0 ; i < actions.length ; i ++) {
@@ -41,7 +41,7 @@ class NumArrayTest {
                 Arguments.of(new Integer[]{-1,null,1}, new int[]{-1}, new String[]{"sumRange","update","sumRange"}, new int[][]{{0,0},{0,1},{0,0}}),
                 Arguments.of(new Integer[]{null,-8,-5,null,0}, new int[]{9,-8}, new String[]{"update","sumRange","sumRange","update","sumRange"}, new int[][]{{0,3},{1,1},{0,1},{1,-3},{0,1}}),
                 Arguments.of(new Integer[]{3,15,7,null,null,null,12,null,5,null}, new int[]{0,9,5,7,3}, new String[]{"sumRange","sumRange","sumRange","update","update","update","sumRange","update","sumRange","update"},
-                        new int[][]{{4,4},{2,4},{3,3},     {4,5},{1,7},{0,8},  {1,2}     ,{1,9},{4,4},{3,4}})
+                        new int[][]{{4,4},{2,4},{3,3},{4,5},{1,7},{0,8},{1,2},{1,9},{4,4},{3,4}})
         );
     }
 }

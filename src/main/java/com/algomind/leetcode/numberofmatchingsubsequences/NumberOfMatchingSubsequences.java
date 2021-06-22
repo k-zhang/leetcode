@@ -1,9 +1,8 @@
 package com.algomind.leetcode.numberofmatchingsubsequences;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class NumberOfMatchingSubsequences {
     // Brute Force (Not accepted)
@@ -76,11 +75,8 @@ public class NumberOfMatchingSubsequences {
     }
 
     private Map<Character, List<Integer>> generateCharMap(String s) {
-        var charMap = new HashMap<Character, List<Integer>>();
-        for(int i = 0 ; i < s.length() ; i ++) {
-            var indices = charMap.computeIfAbsent(s.charAt(i), (c) -> new ArrayList<>());
-            indices.add(i);
-        }
-        return charMap;
+        return IntStream.range(0, s.length())
+                .mapToObj(i -> new int[]{(int)s.charAt(i), i})
+                .collect(Collectors.groupingBy(arr -> (char)arr[0], Collectors.mapping(arr -> arr[1], Collectors.toList())));
     }
 }

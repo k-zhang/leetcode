@@ -15,6 +15,7 @@ LeetCode problem solutions in Java for questions:
 15 - Three Sum<br>
 16 - Three Sum Closest<br>
 18 - Four Sum<br>
+22 - Generate Parentheses<br>
 26 - Remove Duplicates from Sorted Array<br>
 27 - Remove Element<br>
 32 - Next Permutation<br>
@@ -47,29 +48,47 @@ LeetCode problem solutions in Java for questions:
 80 - Remove Duplicates from Sorted Array II<br>
 81 - Search in Rotated Sorted Array II<br>
 88 - Merge Sorted Array<br>
+92 - Reverse Linked List II<br>
 94 - Binary Tree Inorder Traversal<br>
 95 - Unique Binary Search Trees II<br>
 96 - Unique Binary Search Trees<br>
 97 - Interleaving String<br>
+118 - Pascal's Triangle<br>
 121 - Best Time to Buy and Sell Stock<br>
 122 - Best Time to Buy and Sell Stock II<br>
+128 - Longest Consecutive Sequence<br>
 189 - Rotate Array<br>
 256 - Paint House<br>
 303 - Range Sum Query<br>
+307 - Range Sum Query - Mutable<br>
 322 - Coin Change<br>
 323 - Number of Connected Components in an Undirected Graph<br>
+336 - Palindrome Pairs<br>
 338 - Counting Bits<br>
 392 - Is Subsequence<br>
+473 - Matchsticks to Square<br>
 509 - Fibonacci Number<br>
 518 - Coin Change 2<br>
+629 - K Inverse Pairs Array<br>
 695 - Max Area of Island<br>
+729 - My Calendar I<br>
 746 - Min Cost Climbing Stairs<br>
 750 - Number Of Corner Rectangles<br>
 752 - Open the Lock<br>
+778 - Swim in Rising Water<br>
+792 - Number of Matching Subsequences<br>
+795 - Number of Subarrays with Bounded Maximum<br>
+871 - Minimum Number of Refueling Stops<br>
 877 - Stone Game<br>
 1043 - Partition Array for Maximum Sum<br>
+1059 - All Paths from Source Lead to Destination<br>
+1182 - Shortest Distance to Target Color<br>
 1277 - Count Square Submatrices with All Ones<br>
 1314 - Matrix Block Sum<br>
+1383 - Maximum Performance of a Team<br>
 1386 - Cinema Seat Allocation<br>
 1465 - Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts<br>
 1641 - Count Sorted Vowel Strings<br>
+1690 - Stone Game VII<br>
+1696 - Jump Game VI<br>
+1710 - Maximum Units on a Truck

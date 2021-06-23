@@ -14,7 +14,7 @@ class ReverseLinkedListIITest {
     @MethodSource("provideData")
     public void test(int[] expected, int[] input, int left, int right) {
         ListNode listNode = toLinkedList(input);
-        ListNode result = solution.reverseBetween(listNode, left, right);
+        ListNode result = solution.reverseBetween2(listNode, left, right);
 
         ListNode current = result;
         for (int j : expected) {

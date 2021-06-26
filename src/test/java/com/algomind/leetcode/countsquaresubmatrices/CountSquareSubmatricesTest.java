@@ -12,7 +12,7 @@ class CountSquareSubmatricesTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testMatrixBlockSum(int expected, int[][] mat) {
+    public void test(int expected, int[][] mat) {
         Assertions.assertEquals(expected, countSquareSubmatrices.countSquares(mat));
     }
 

@@ -12,7 +12,7 @@ class ClimbingStairsTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testClimbingStairs(int expected, int input) {
+    public void test(int expected, int input) {
         Assertions.assertEquals(expected, climbingStairs.climbStairs(input));
     }
 

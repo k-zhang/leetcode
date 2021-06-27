@@ -12,7 +12,7 @@ class CinemaSeatAllocationTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testCinemaSeatAllocation(int expected, int n, int[][] reservedSeat) {
+    public void test(int expected, int n, int[][] reservedSeat) {
         Assertions.assertEquals(expected, cinemaSeatAllocation.maxNumberOfFamilies(n, reservedSeat));
     }
 

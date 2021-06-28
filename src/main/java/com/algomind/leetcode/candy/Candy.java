@@ -16,7 +16,9 @@ public class Candy {
                 candies[i] = 1;
                 for (int j = i - 1; j >= 0; j--) {
                     if (ratings[j] > ratings[j + 1]) {
-                        if (candies[j] == candies[j + 1]) candies[j]++;
+                        if (candies[j] == candies[j + 1]) {
+                            candies[j]++;
+                        }
                     } else {
                         break;
                     }
@@ -56,5 +58,28 @@ public class Candy {
             result += Math.max(leftToRight[i], rightToLeft[i]);
         }
         return result;
+    }
+
+    // Slope
+    public int candy2(int[] ratings) {
+        int n = ratings.length;
+        int ret = 1;
+        int inc = 1, dec = 0, pre = 1;
+        for (int i = 1; i < n; i++) {
+            if (ratings[i] >= ratings[i - 1]) {
+                dec = 0;
+                pre = ratings[i] == ratings[i - 1] ? 1 : pre + 1;
+                ret += pre;
+                inc = pre;
+            } else {
+                dec++;
+                if (dec == inc) {
+                    dec++;
+                }
+                ret += dec;
+                pre = 1;
+            }
+        }
+        return ret;
     }
 }

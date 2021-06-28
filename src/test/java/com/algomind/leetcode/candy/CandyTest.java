@@ -13,7 +13,7 @@ class CandyTest {
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(int expected, int[] input) {
-        Assertions.assertEquals(expected, candy.candy1(input));
+        Assertions.assertEquals(expected, candy.candy(input));
     }
 
     private static Stream<Arguments> provideData() {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TreeCreation {
+    // Null is required for non-null parent node. If parent node is null, then null should not be in the array.
     public static TreeNode constructTree(Integer[] nums) {
         if(nums.length == 0) return null;
         if(nums.length == 1) {

@@ -5,7 +5,7 @@ public class TreeComparison {
         if(root1 == null && root2 == null) return true;
 
         if(root1 != null  && root2 != null) {
-            return ((root1.val.equals(root2.val)) &&
+            return ((root1.val == root2.val) &&
                     (areIdenticalTrees(root1.left, root2.left)) &&
                     (areIdenticalTrees(root1.right, root2.right)));
         }

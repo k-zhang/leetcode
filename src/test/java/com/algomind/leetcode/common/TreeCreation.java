@@ -1,7 +1,7 @@
 package com.algomind.leetcode.common;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TreeCreation {
     public static TreeNode constructTree(Integer[] nums) {
@@ -11,30 +11,22 @@ public class TreeCreation {
             return new TreeNode(nums[0]);
         }
 
-        List<TreeNode> tree = Arrays.stream(nums).map(TreeNode::new).collect(Collectors.toList());
+        List<TreeNode> tree = new ArrayList<>();
+        for(var num : nums ) {
+            TreeNode node = num != null ? new TreeNode(num) : null;
+            tree.add(node);
+        }
 
         int index = 0, search = 1;
         while(search < tree.size()) {
             TreeNode node = tree.get(index);
-            if(node.val != null) {
+            if(node != null) {
                 node.left = tree.get(search++);
                 if(search < tree.size()) node.right = tree.get(search++);
             }
             index ++;
         }
 
-        cleanNull(tree.get(0));
-
         return tree.get(0);
-    }
-
-    private static void cleanNull(TreeNode treeNode) {
-        if(treeNode == null) return;
-
-        if(treeNode.left != null && treeNode.left.val == null) treeNode.left = null;
-        if(treeNode.right != null && treeNode.right.val == null) treeNode.right = null;
-
-        if(treeNode.left != null) cleanNull(treeNode.left);
-        if(treeNode.right != null) cleanNull(treeNode.right);
     }
 }

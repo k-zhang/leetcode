@@ -1,6 +1,5 @@
 package com.algomind.leetcode.uniquebinarysearchtrees2;
 
-import com.algomind.leetcode.binarytreeinordertraversal.BinaryTreeInOrderTraversal;
 import com.algomind.leetcode.common.TreeComparison;
 import com.algomind.leetcode.common.TreeCreation;
 import com.algomind.leetcode.common.TreeNode;

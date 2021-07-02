@@ -49,4 +49,25 @@ public class FindKClosestElements {
 
         return result;
     }
+
+    public List<Integer> findClosestElements1(int[] arr, int k, int x) {
+        var left = 0;
+        var right = arr.length - k;
+
+        while (left < right) {
+            var mid = (left + right) / 2;
+            if (x - arr[mid] > arr[mid + k] - x) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+
+        var result = new ArrayList<Integer>();
+        for (int i = left; i < left + k; i++) {
+            result.add(arr[i]);
+        }
+
+        return result;
+    }
 }

@@ -12,7 +12,7 @@ class MedianOfTwoSortedArraysTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testMedianOfTwoSortedArrays(double expected, int[] num1, int[] num2) {
+    public void test(double expected, int[] num1, int[] num2) {
         Assertions.assertEquals(expected, medianOfTwoSortedArrays.findMedianSortedArrays(num1, num2));
     }
 

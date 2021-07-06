@@ -12,7 +12,7 @@ class RemoveElementTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testMaxSubArray(int expected, int[] input, int val) {
+    public void test(int expected, int[] input, int val) {
         Assertions.assertEquals(expected, removeElement.removeElement(input, val));
     }
 

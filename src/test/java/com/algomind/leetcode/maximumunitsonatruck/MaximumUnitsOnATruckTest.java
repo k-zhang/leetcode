@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class MaximumUnitsOnATruckTest {
-    private final MaximumUnitsOnATruck maximumUnitsOnATruck = new MaximumUnitsOnATruck();
+    private final MaximumUnitsOnATruck solution = new MaximumUnitsOnATruck();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testLongestPalindromicSubstring(int expected, int[][] boxTypes, int truckSize) {
-        Assertions.assertEquals(expected, maximumUnitsOnATruck.maximumUnits(boxTypes, truckSize));
+    public void test(int expected, int[][] boxTypes, int truckSize) {
+        Assertions.assertEquals(expected, solution.maximumUnits(boxTypes, truckSize));
     }
 
     private static Stream<Arguments> provideData() {

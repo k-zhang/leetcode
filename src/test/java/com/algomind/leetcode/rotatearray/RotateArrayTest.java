@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 public class RotateArrayTest {
-    private final RotateArray rotateArray = new RotateArray();
+    private final RotateArray solution = new RotateArray();
 
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(int[] expected, int[] nums, int k) {
-        rotateArray.rotate2(nums, k);
+        solution.rotate2(nums, k);
         Assertions.assertArrayEquals(expected, nums);
     }
 

@@ -1,4 +1,4 @@
-package com.algomind.contest.question2;
+package com.algomind.leetcode.nearestexitfromentranceinmaze;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -7,13 +7,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class SolutionTest {
-    private final Solution solution = new Solution();
+class NearestExitFromEntranceInMazeTest {
+    private final NearestExitFromEntranceInMaze solution = new NearestExitFromEntranceInMaze();
 
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(int expected, char[][] maze, int[] entrance) {
-        Assertions.assertEquals(expected, solution.nearestExit(maze, entrance));
+        Assertions.assertEquals(expected, solution.nearestExit2(maze, entrance));
     }
 
     private static Stream<Arguments> provideData() {
@@ -24,10 +24,10 @@ class SolutionTest {
                 Arguments.of(1, new char[][]{{'.','.'}}, new int[]{0,1}),
                 Arguments.of(12, new char[][]{{'+','.','+','+','+','+','+'},{'+','.','+','.','.','.','+'},{'+','.','+','.','+','.','+'},{'+','.','.','.','+','.','+'},{'+','+','+','+','+','.','+'}}, new int[]{0,1}),
                 Arguments.of(7,  new char[][]{{'+','.','+','+','+','+','+'}
-                                             ,{'+','.','+','.','.','.','+'}
-                                             ,{'+','.','+','.','+','.','+'}
-                                             ,{'+','.','.','.','.','.','+'}
-                                             ,{'+','+','+','+','.','+','.'}}, new int[]{0,1}),
+                        ,{'+','.','+','.','.','.','+'}
+                        ,{'+','.','+','.','+','.','+'}
+                        ,{'+','.','.','.','.','.','+'}
+                        ,{'+','+','+','+','.','+','.'}}, new int[]{0,1}),
                 Arguments.of(5,  new char[][]{
                         {'.','.','.','.','.','+','.','.','.'}
                         ,{'.','+','.','.','.','.','.','.','.'}

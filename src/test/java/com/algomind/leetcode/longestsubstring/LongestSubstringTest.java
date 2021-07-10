@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class LongestSubstringTest {
-    private LongestSubstring longestSubstring = new LongestSubstring();
+    private LongestSubstring solution = new LongestSubstring();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testLongestSubstring(int result, String s) {
-        Assertions.assertEquals(result, longestSubstring.lengthOfLongestSubstring(s));
+    public void test(int result, String s) {
+        Assertions.assertEquals(result, solution.lengthOfLongestSubstring(s));
     }
 
     private static Stream<Arguments> provideData() {

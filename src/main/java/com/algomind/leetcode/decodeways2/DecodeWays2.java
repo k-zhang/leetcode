@@ -39,4 +39,34 @@ public class DecodeWays2 {
 
         return (int)dp[s.length()];
     }
+
+    public int numDecodings1(String s) {
+        int MOD = 1000000007;
+
+        if (s.charAt(0) == '0') return 0;
+
+        long a = 1, b = 0;
+        if (s.charAt(0) == '*') {
+            b = 9;
+        } else {
+            b = 1;
+        }
+
+        for (int i = 1; i < s.length(); i++) {
+            long c = 0;
+            if(s.charAt(i) != '*') {
+                if(s.charAt(i) != '0') c = b;
+                if(s.charAt(i-1) == '1' || s.charAt(i-1) == '*') c += a;
+                if(s.charAt(i) >= '0' && s.charAt(i) <= '6' && (s.charAt(i-1) == '2' || s.charAt(i-1) == '*')) c += a;
+            }
+            else{
+                c = b * 9;
+                if(s.charAt(i-1) =='1' || s.charAt(i-1) == '*') c += a*9;
+                if(s.charAt(i-1) == '2' || s.charAt(i-1) == '*') c += a*6;
+            }
+            a = b;
+            b = c % MOD;
+        }
+        return (int)b;
+    }
 }

@@ -13,7 +13,7 @@ class DecodeWays2Test {
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(int expected, String s) {
-        Assertions.assertEquals(expected, solution.numDecodings(s));
+        Assertions.assertEquals(expected, solution.numDecodings1(s));
     }
 
     private static Stream<Arguments> provideData() {

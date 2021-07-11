@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class EditDistanceTest {
-    private final EditDistance editDistance = new EditDistance();
+    private final EditDistance solution = new EditDistance();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testEditDistance(int expected, String word1, String word2) {
-        Assertions.assertEquals(expected, editDistance.minDistance(word1, word2));
+    public void test(int expected, String word1, String word2) {
+        Assertions.assertEquals(expected, solution.minDistance(word1, word2));
     }
 
     private static Stream<Arguments> provideData() {

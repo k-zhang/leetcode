@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class FirstMissingPositiveTest {
-    private final FirstMissingPositive firstMissingPositive = new FirstMissingPositive();
+    private final FirstMissingPositive solution = new FirstMissingPositive();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testFirstMissingPositive(int expected, int[] input) {
-        Assertions.assertEquals(expected, firstMissingPositive.firstMissingPositive(input));
+    public void test(int expected, int[] input) {
+        Assertions.assertEquals(expected, solution.firstMissingPositive(input));
     }
 
     private static Stream<Arguments> provideData() {

@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class WordSearchTest {
-    private final WordSearch wordSearch = new WordSearch();
+    private final WordSearch solution = new WordSearch();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testStoneGame(boolean expected, char[][] board, String word) {
-        Assertions.assertEquals(expected, wordSearch.exist(board, word));
+    public void test(boolean expected, char[][] board, String word) {
+        Assertions.assertEquals(expected, solution.exist(board, word));
     }
 
     private static Stream<Arguments> provideData() {

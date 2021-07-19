@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class ThreeSumClosestTest {
-    private final ThreeSumClosest threeSumClosest = new ThreeSumClosest();
+    private final ThreeSumClosest solution = new ThreeSumClosest();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testThreeSumClosest(int expected, int[] nums, int target) {
-        Assertions.assertEquals(expected, threeSumClosest.threeSumClosest(nums, target));
+    public void test(int expected, int[] nums, int target) {
+        Assertions.assertEquals(expected, solution.threeSumClosest(nums, target));
     }
 
     private static Stream<Arguments> provideData() {

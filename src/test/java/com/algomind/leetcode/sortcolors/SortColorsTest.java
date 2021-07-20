@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class SortColorsTest {
-    private final SortColors sortColors = new SortColors();
+    private final SortColors solution = new SortColors();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testThreeSumClosest(int[] expected, int[] nums) {
-        sortColors.sortColors1(nums);
+    public void test(int[] expected, int[] nums) {
+        solution.sortColors1(nums);
         Assertions.assertArrayEquals(expected, nums);
     }
 

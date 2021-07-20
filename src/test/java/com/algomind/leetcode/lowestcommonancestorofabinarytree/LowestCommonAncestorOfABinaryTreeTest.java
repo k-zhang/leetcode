@@ -27,7 +27,10 @@ class LowestCommonAncestorOfABinaryTreeTest {
             Arguments.of(5, new Integer[]{3,5,1,6,2,0,8,null,null,7,4}, 5, 4),
             Arguments.of(3, new Integer[]{3,5,1,6,2,0,8,null,null,7,4}, 5, 8),
             Arguments.of(1, new Integer[]{1,2}, 1, 2),
-            Arguments.of(2, new Integer[]{2,null,1}, 1, 2)
+            Arguments.of(2, new Integer[]{2,null,1}, 1, 2),
+            Arguments.of(6, new Integer[]{6,2,8,0,4,7,9,null,null,3,5}, 2, 8),
+            Arguments.of(2, new Integer[]{6,2,8,0,4,7,9,null,null,3,5}, 2, 4),
+            Arguments.of(2, new Integer[]{2,1}, 2, 1)
         );
     }
 }

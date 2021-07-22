@@ -8,12 +8,12 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 class PlusOneTest {
-    private final PlusOne plusOne = new PlusOne();
+    private final PlusOne solution = new PlusOne();
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testPlusOne(int[] expected, int[] input) {
-        Assertions.assertArrayEquals(expected, plusOne.plusOne(input));
+    public void test(int[] expected, int[] input) {
+        Assertions.assertArrayEquals(expected, solution.plusOne(input));
     }
 
     private static Stream<Arguments> provideData() {

@@ -18,8 +18,10 @@ public class NonnegativeIntegersWithoutConsecutiveOnes {
                     break;
                 }
                 prev_bit = 1;
-            } else
+            } else {
                 prev_bit = 0;
+            }
+            
             i--;
         }
 

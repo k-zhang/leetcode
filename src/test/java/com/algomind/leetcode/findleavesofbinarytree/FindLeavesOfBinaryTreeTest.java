@@ -15,7 +15,7 @@ class FindLeavesOfBinaryTreeTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
-    public void testCreateBinaryTreeInOrder(int[][] expected, Integer[] nums) {
+    public void test(int[][] expected, Integer[] nums) {
         TreeNode tree = TreeCreation.constructTree(nums);
         List<List<Integer>> result = solution.findLeaves(tree);
 

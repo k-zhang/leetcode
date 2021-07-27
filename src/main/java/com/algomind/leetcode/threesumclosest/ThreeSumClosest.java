@@ -5,6 +5,7 @@ import java.util.*;
 public class ThreeSumClosest {
     public int threeSumClosest(int[] nums, int target) {
         if(nums.length < 3) return 0;
+        Arrays.sort(nums);
 
         int diff = Integer.MAX_VALUE;
         int diffAbs = Integer.MAX_VALUE;

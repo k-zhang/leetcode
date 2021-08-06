@@ -30,4 +30,38 @@ public class TreeCreation {
 
         return tree.get(0);
     }
+
+    public static Node constructNaryTree(Integer[] nums) {
+        if(nums.length == 0) return null;
+        if(nums.length == 1) {
+            if(nums[0] == null) throw new IllegalArgumentException("Cannot have one single null as input.");
+            return new Node(nums[0]);
+        }
+
+        List<Node> tree = new ArrayList<>();
+        for(var num : nums ) {
+            Node node = num != null ? new Node(num, new ArrayList<>()) : null;
+            tree.add(node);
+        }
+
+        Node current = tree.get(0);;
+
+        int index = 2, curIndex = 1;
+
+        while(index < tree.size()) {
+            while(index < tree.size() && tree.get(index) != null) {
+                current.children.add(tree.get(index));
+                index ++;
+            }
+
+            if(index == tree.size()) break;
+
+            while(tree.get(++curIndex) == null) {}
+            current = tree.get(curIndex);
+
+            index ++;
+        }
+
+        return tree.get(0);
+    }
 }

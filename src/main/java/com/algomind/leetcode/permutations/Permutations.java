@@ -1,9 +1,6 @@
 package com.algomind.leetcode.permutations;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Permutations {
     public List<List<Integer>> permute(int[] nums) {
@@ -25,6 +22,34 @@ public class Permutations {
             Collections.swap(permute, first , i);
             backtracking(length, permute, result, first + 1);
             Collections.swap(permute, first, i);
+        }
+    }
+
+    public List<List<Integer>> permute1(int[] nums) {
+        var result = new ArrayList<List<Integer>>();
+        var permute = new LinkedList<Integer>();
+
+        var used = new boolean[nums.length];
+
+        backtracking1(nums.length, used, nums, permute, result);
+
+        return result;
+    }
+
+    private void backtracking1(int length, boolean[] used, int[] nums, LinkedList<Integer> permute, ArrayList<List<Integer>> result) {
+        if(permute.size() == length) {
+            result.add(new ArrayList<>(permute));
+        }
+
+        for(int i = 0 ; i < length ; i ++) {
+            if(used[i]) {
+                continue;
+            }
+            permute.add(nums[i]);
+            used[i] = true;
+            backtracking1(length, used, nums, permute, result);
+            if(!permute.isEmpty()) permute.removeLast();
+            used[i] = false;
         }
     }
 }

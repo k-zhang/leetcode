@@ -16,7 +16,7 @@ class PermutationsTest {
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(Set<List<Integer>> expected, int[] input) {
-        Assertions.assertEquals(expected, new HashSet<>(solution.permute(input)));
+        Assertions.assertEquals(expected, new HashSet<>(solution.permute1(input)));
     }
 
     private static Stream<Arguments> provideData() {

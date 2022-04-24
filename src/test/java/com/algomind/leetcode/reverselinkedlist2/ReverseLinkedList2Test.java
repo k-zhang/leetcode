@@ -1,5 +1,6 @@
 package com.algomind.leetcode.reverselinkedlist2;
 
+import com.algomind.leetcode.common.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

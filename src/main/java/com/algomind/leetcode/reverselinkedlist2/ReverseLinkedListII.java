@@ -1,5 +1,7 @@
 package com.algomind.leetcode.reverselinkedlist2;
 
+import com.algomind.leetcode.common.ListNode;
+
 public class ReverseLinkedListII {
     //Two pass O(n)
     public ListNode reverseBetween(ListNode head, int left, int right) {

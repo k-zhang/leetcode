@@ -2,7 +2,6 @@ package com.algomind.leetcode.medium;
 
 import com.algomind.leetcode.common.TreeCreation;
 import com.algomind.leetcode.common.TreeNode;
-import com.algomind.leetcode.medium.FindLeavesOfBinaryTree;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

@@ -1,7 +1,6 @@
 package com.algomind.leetcode.medium;
 
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class ZeroOneMatrix {
     public int[][] updateMatrix(int[][] mat) {

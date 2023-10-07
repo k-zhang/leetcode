@@ -1,7 +1,5 @@
 package com.algomind.leetcode.medium;
 
-import java.util.Arrays;
-
 public class CountingBits {
     public int[] countBits(int num) {
         if(num == 0) return new int[]{0};

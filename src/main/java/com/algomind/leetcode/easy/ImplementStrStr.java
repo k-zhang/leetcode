@@ -95,4 +95,19 @@ public class ImplementStrStr {
 
         return -1;
     }
+
+    // Best solution
+    public int strStr3(String haystack, String needle) {
+        if(needle.isEmpty()) return 0;
+
+        for(int i = 0 ; i < haystack.length(); i ++) {
+            if(haystack.charAt(i) == needle.charAt(0)) {
+                if(haystack.startsWith(needle, i)) {
+                    return i;
+                }
+            }
+        }
+
+        return -1;
+    }
 }

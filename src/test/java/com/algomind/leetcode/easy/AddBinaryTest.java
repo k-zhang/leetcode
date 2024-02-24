@@ -13,7 +13,7 @@ class AddBinaryTest {
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(String expected, String a, String b) {
-        Assertions.assertEquals(expected, solution.addBinary1(a, b));
+        Assertions.assertEquals(expected, solution.addBinary2(a, b));
     }
 
     private static Stream<Arguments> provideData() {

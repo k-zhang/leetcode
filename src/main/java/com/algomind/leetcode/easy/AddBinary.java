@@ -76,7 +76,7 @@ public class AddBinary {
 
     public String addBinary2(String a, String b) {
         int n = a.length(), m = b.length();
-        if (n < m) return addBinary(b, a);
+        if (n < m) return addBinary2(b, a);
         int L = Math.max(n, m);
 
         StringBuilder sb = new StringBuilder();

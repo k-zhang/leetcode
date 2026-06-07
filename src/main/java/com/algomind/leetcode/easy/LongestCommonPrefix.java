@@ -40,4 +40,31 @@ public class LongestCommonPrefix {
         }
         return strs[0];
     }
+
+    public String longestCommonPrefix2(String[] strs) {
+        if(strs.length == 1) {
+            return strs[0];
+        }
+
+        int maxIndex = 0;
+        int i = 0;
+        while(true) {
+            boolean same = true;
+            for (int j = 1 ; j < strs.length ; j ++) {
+                if (i == strs[j].length() || i == strs[j-1].length() || strs[j].charAt(i) != strs[j-1].charAt(i)) {
+                    same = false;
+                    break;
+                }
+            }
+
+            if(same) {
+                maxIndex = i + 1;
+                i++;
+            } else {
+                break;
+            }
+        }
+
+        return strs[0].substring(0, maxIndex);
+    }
 }

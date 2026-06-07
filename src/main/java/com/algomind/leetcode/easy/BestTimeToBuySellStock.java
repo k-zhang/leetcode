@@ -25,4 +25,19 @@ public class BestTimeToBuySellStock {
         }
         return maxProfit;
     }
+
+    public int maxProfit2(int[] prices) {
+        int maxProfit = 0;
+        for(int i = 1 ; i < prices.length ; i ++) {
+            int profit = prices[i] - prices[i-1];
+            if(profit > maxProfit) {
+                maxProfit = profit;
+            }
+
+            if(prices[i] > prices[i-1]) {
+                prices[i] = prices[i-1];
+            }
+        }
+        return maxProfit;
+    }
 }

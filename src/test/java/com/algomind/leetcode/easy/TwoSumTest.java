@@ -22,7 +22,8 @@ class TwoSumTest {
                 Arguments.of(new int[]{1, 2}, new int[]{3, 2, 4}, 6),
                 Arguments.of(new int[]{0, 1}, new int[]{3, 3}, 6),
                 Arguments.of(new int[]{0, 2}, new int[]{3, 6, -1}, 2),
-                Arguments.of(new int[]{2, 3}, new int[]{1, 5, 0, 0}, 0)
+                Arguments.of(new int[]{2, 3}, new int[]{1, 5, 0, 0}, 0),
+                Arguments.of(new int[]{4, 7}, new int[]{1, 5, 10, 7, -3, 0, 0, -5}, -8)
         );
     }
 }

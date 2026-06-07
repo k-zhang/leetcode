@@ -13,7 +13,7 @@ class BestTimeToBuySellStockTest {
     @ParameterizedTest
     @MethodSource("provideData")
     public void test(int expected, int[] input) {
-        Assertions.assertEquals(expected, bestTimeToBuySellStock.maxProfit1(input));
+        Assertions.assertEquals(expected, bestTimeToBuySellStock.maxProfit(input));
     }
 
     private static Stream<Arguments> provideData() {
